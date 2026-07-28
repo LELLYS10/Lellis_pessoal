@@ -7,19 +7,31 @@ atualizado_em: 2026-07-28
 
 # Lellis Pessoal
 
-Este é o vault pessoal do Tom (Lellis Flavio Oliveira Santos), **separado do vault CENTRAL-CREDPLUS** (que é 100% dedicado ao negócio CredPlus). Nada aqui deve se misturar com CredPlus, e nada de CredPlus deve ser copiado pra cá.
+Vault pessoal do Tom (Lellis Flavio Oliveira Santos), **separado do vault CENTRAL-CREDPLUS** (que é 100% dedicado ao negócio CredPlus). Nada aqui se mistura com CredPlus.
 
-## Como uma IA deve usar este vault
+Sincronizado com o repositório privado **github.com/LELLYS10/Lellis_pessoal** (plugin Obsidian Git, auto commit-and-sync a cada 10 min, auto pull a cada 10 min).
 
-Se você é uma IA (Claude ou outra) lendo isto pela primeira vez: comece por este arquivo, depois leia `hermes/README.md` para entender o projeto principal em andamento. `hermes/decisoes.md` tem o histórico de decisões já tomadas — não repita perguntas já respondidas lá. `hermes/pendencias.md` tem o que ainda falta ser feito.
+Local no disco: `/Users/lellisflaviooliveirasantos/Lellis Pessoal` (fora do iCloud — ver `hermes/decisoes.md` para o porquê).
+
+## SE VOCÊ É UMA IA LENDO ISTO PELA PRIMEIRA VEZ
+
+Leia nesta ordem:
+
+1. Este arquivo (visão geral)
+2. `hermes/COMO-CONTINUAR.md` — **comece o trabalho por aqui**. Estado atual, o que falta, e o passo-a-passo do próximo passo.
+3. `hermes/arquitetura.md` — como o sistema funciona hoje, de verdade
+4. `hermes/decisoes.md` — decisões já fechadas. **Não reabra o que está lá.**
+5. `hermes/pendencias.md` — lista de tarefas
+
+Regras ao trabalhar neste vault: atualize `CHANGELOG.md` a cada mudança relevante, e comite. Nunca coloque senha, token ou chave de API dentro destes arquivos — o repositório é privado, mas credenciais ficam só nas variáveis de ambiente do servidor.
 
 ## Estrutura
 
-- **hermes/** — o assistente pessoal do Tom (bot no Telegram + automação no n8n). Projeto principal deste vault.
-- **financeiro-pessoal/** — controle de gastos e pagamentos pessoais do Tom (não confundir com o financeiro do CredPlus).
-- **policial/** — trabalho do Tom na polícia ambiental: ocorrências, relatórios, ofícios, base jurídica (leis/decretos/normas).
-- **CHANGELOG.md** — histórico cronológico de tudo que foi alterado neste projeto, com data.
+- **hermes/** — a assistente pessoal do Tom. Projeto principal deste vault.
+- **financeiro-pessoal/** — gastos e pagamentos pessoais (não confundir com o financeiro do CredPlus).
+- **policial/** — trabalho na polícia ambiental: ocorrências, relatórios, ofícios, base jurídica.
+- **CHANGELOG.md** — histórico cronológico de tudo que foi alterado.
 
 ## Quem é o Tom
 
-Tom é leigo em tecnologia mas gosta de programação e de criar aplicativos. Gosta também de redigir documentos formais (ocorrências policiais, ofícios). Prefere explicações em português claro, sem jargão desnecessário, e prefere ser perguntado antes de decisões importantes serem tomadas por ele.
+Leigo em tecnologia, mas gosta de programação e de criar aplicativos. Gosta de redigir documentos formais (ocorrências, ofícios). Prefere explicações em português claro, sem jargão, e prefere ser consultado antes de decisões importantes. Atua na polícia ambiental no Tocantins. Fuso horário: America/Araguaina (UTC-3).

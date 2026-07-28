@@ -1,21 +1,33 @@
 # Changelog — Lellis Pessoal
 
-Histórico de mudanças no projeto, mais recente primeiro. Cada entrada corresponde a um commit git nesta pasta.
+Histórico de mudanças, mais recente primeiro.
+
+## 2026-07-28 (noite) — HERMES NO AR
+
+Dia em que a Hermes saiu do papel e entrou em funcionamento.
+
+**Mudança de arquitetura.** O plano de construir a Hermes no n8n foi abandonado. Descobrimos que a Hostinger oferece o Hermes Workspace (Nous Research) com instalação de 1 clique no Docker Manager, trazendo pronto o que teríamos que construir peça por peça: memória persistente, painel web, agendador, multi-canal e catálogo de habilidades. Confirmado que é gratuito — o que se paga é a VPS, que o Tom já tem.
+
+**Instalação.** Hermes Workspace instalado na VPS (projeto `hermes-workspace-uzp5`), rodando com dois containers e roteado pelo Traefik. Painel acessível em `hermes-workspace-uzp5.srv1416255.hstgr.cloud`, e também pelo Safari no iPhone.
+
+**Telegram conectado.** Bot @Tomhenks78_Bot criado e ligado ao gateway, com acesso restrito só ao Tom. Houve uma confusão pelo caminho — o ID informado era o do próprio bot (o número antes dos dois pontos no token), não o do Tom. A própria Hermes detectou a inconsistência e corrigiu.
+
+**Memória alimentada.** A Hermes recebeu a apresentação do Tom, as regras de como trabalhar com ele, e os dados da família, com a instrução de lembrar todas as datas 15, 5 e 1 dia antes.
+
+**Vault versionado no GitHub.** Criado o repositório privado `github.com/LELLYS10/Lellis_pessoal`. O vault foi movido de dentro do iCloud para `~/Lellis Pessoal`, porque o macOS bloqueia a escrita do Git em pastas do iCloud Drive. Plugin Obsidian Git instalado, com commit-and-sync e pull automáticos a cada 10 minutos. Primeiro push com 33 arquivos concluído.
+
+**Descoberta importante:** planos Claude Max e ChatGPT Plus não incluem créditos de API — são cobranças separadas. A Hermes consome API paga via OpenRouter; para construir e programar, o Tom usa o Claude pelo Cowork, que já está no plano dele.
+
+**Documentação reescrita** para refletir a arquitetura real e permitir que qualquer IA retome o projeto sem contexto prévio (`hermes/COMO-CONTINUAR.md`).
 
 ## 2026-07-28 (tarde)
 
-- Criada a conta de serviço da Hermes: lellishermes@gmail.com. E-mail principal do Tom (lellisflavio@gmail.com) permanece intocado — nada migra, nada muda na rotina dele.
-- Criado projeto Supabase PRÓPRIO da Hermes: "Lellis.pessoal" (plano free, compute nano, status saudável, sem migrações ainda). Mudança em relação ao plano anterior, que era usar tabelas dentro do projeto do CredPlus — agora a separação é total.
-- Definida a estratégia de agenda: compartilhar o Google Calendar do e-mail principal com a conta da Hermes, pra ela trabalhar nos dados reais sem o Tom mudar nada.
-- Vault Obsidian "Lellis Pessoal" aberto corretamente como cofre único (antes tinha sido aberto errado, como dois cofres separados a partir das subpastas). Lista de cofres limpa: só Lellis Pessoal e CENTRAL-CREDPLUS.
-- Pendente: rodar o SQL das tabelas `hermes_*` dentro do projeto novo, e criar o bot do Telegram.
+- Criada a conta de serviço lellishermes@gmail.com. E-mail principal do Tom permanece intocado.
+- Criado projeto Supabase próprio "Lellis.pessoal" (acabou não sendo usado, com a mudança para o Hermes Workspace).
+- Vault "Lellis Pessoal" aberto corretamente como cofre único no Obsidian.
 
-## 2026-07-28
+## 2026-07-28 (manhã)
 
-- Estrutura inicial do vault criada (00-INDICE, hermes/, financeiro-pessoal/, policial/).
-- Definido: Hermes será um workflow n8n novo e separado do JARVIS (que fica 100% dedicado ao CredPlus).
-- Definido: Hermes será um bot único no Telegram (não dois bots separados) — organização interna por tabelas, não por bots separados.
-- Definido: armazenamento de dados pessoais (agenda extra, pagamentos, tarefas, ocorrências) no Supabase, tabelas `hermes_agenda`, `hermes_pagamentos`, `hermes_tarefas`, `hermes_ocorrencias` (já criadas por Tom via SQL Editor).
-- Definido: bot no Telegram (não WhatsApp, pra evitar risco de banimento de número e burocracia da API oficial da Meta).
-- Iniciada a biblioteca jurídica: coletados os textos oficiais da Lei 9.605/1998 (Crimes Ambientais) e do Decreto 6.514/2008 (infrações administrativas e multas), fontes no Planalto/Câmara dos Deputados. Decreto estadual do Tocantins sobre multas ainda pendente — Tom vai enviar.
-- Pendente: token do bot Telegram da Hermes, criação de e-mail dedicado, definição de qual pasta/local do Mac vai guardar os PDFs dos modelos de ofício/procedimento.
+- Estrutura inicial do vault criada.
+- Definições iniciais: Hermes separada do CredPlus, bot único, Telegram como canal, sem planilhas.
+- Iniciada a biblioteca jurídica: Lei 9.605/1998 e Decreto 6.514/2008 (federais) confirmados em fonte oficial. Decreto estadual do Tocantins pendente de envio pelo Tom.

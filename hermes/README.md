@@ -1,30 +1,40 @@
 ---
 titulo: Hermes — Assistente Pessoal do Tom
-status: em construção
+status: NO AR desde 28/07/2026
 atualizado_em: 2026-07-28
 ---
 
 # Hermes
 
-Secretária pessoal do Tom, via bot no Telegram, humanizada (não robótica), rodando na VPS do Tom (mesma VPS do CredPlus, mas em workflow n8n totalmente separado).
+Assistente pessoal do Tom, rodando na VPS dele via Hermes Workspace (Nous Research). Conversa por navegador, celular e Telegram, com memória própria que aprende com o uso.
 
-## Objetivo
+**Para retomar o trabalho neste projeto, leia `COMO-CONTINUAR.md`.**
 
-Cuidar da vida pessoal e profissional (polícia ambiental) do Tom:
+## O que ela cuida
 
-- Agenda e lembretes
-- Controle de gastos e pagamentos pessoais (separado do CredPlus)
-- Organização geral (tarefas, anotações)
-- Registro e redação de ocorrências da polícia ambiental
-- Redação de relatórios e ofícios a partir de modelos que o Tom vai fornecer em PDF
-- (futuro) Base jurídica: cruzamento automático de leis de crimes ambientais + decretos que tipificam multas, quando o Tom mencionar um crime
+- Agenda, compromissos e lembretes (incluindo datas da família: 15, 5 e 1 dia antes)
+- Gastos e pagamentos pessoais
+- Tarefas e anotações do dia a dia
+- Trabalho na polícia ambiental: registro de ocorrências, redação de relatórios e ofícios
+- (em construção) Consulta cruzada de leis de crimes ambientais com os decretos que tipificam as multas
 
-## O que NÃO é
+## O que ela NÃO é
 
-Não tem nenhuma conexão com o CredPlus. O assistente do CredPlus se chama **JARVIS**, é outro workflow, outro bot do Telegram (`@Credpainel_bot`), outro banco de dados. Ver `../hermes/decisoes.md` para o porquê dessa separação.
+Não tem nenhuma relação com o CredPlus. Aquele negócio tem outro assistente, o JARVIS, em outro sistema.
 
-## Status atual
+## Como o Tom fala com ela
 
-Ainda não construída no n8n. Ver `pendencias.md` para o que falta antes de montar o workflow.
+- Painel web: `hermes-workspace-uzp5.srv1416255.hstgr.cloud`
+- Celular: mesmo endereço no Safari
+- Telegram: @Tomhenks78_Bot
 
-Veja `arquitetura.md` para o desenho técnico e `decisoes.md` para o histórico de decisões.
+## Personalidade
+
+Humanizada e calorosa, em português do Brasil, conversando como pessoa — nada de resposta robótica. Honesta: diz quando não tem certeza, em vez de inventar. Em documento oficial, sempre mostra a fonte e pede conferência do Tom.
+
+## Arquivos
+
+- `COMO-CONTINUAR.md` — estado atual, o que falta, armadilhas já encontradas
+- `arquitetura.md` — como o sistema funciona por dentro
+- `decisoes.md` — decisões fechadas e o porquê
+- `pendencias.md` — lista de tarefas

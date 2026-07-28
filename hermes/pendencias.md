@@ -1,24 +1,38 @@
 ---
 titulo: Pendências — Hermes
-status: vivo (marcar como feito e mover pra decisoes.md/changelog quando resolvido)
+status: vivo
 atualizado_em: 2026-07-28
 ---
 
-# Pendente do lado do Tom
+> Para o contexto completo de cada item, leia `COMO-CONTINUAR.md`.
 
-- [x] Criar e-mail dedicado: lellishermes@gmail.com
-- [x] Criar projeto Supabase próprio "Lellis.pessoal"
-- [ ] Rodar o SQL das tabelas `hermes_*` DENTRO do projeto Lellis.pessoal (o projeto novo ainda está sem migrações)
-- [ ] Compartilhar a agenda do Google do e-mail principal com a conta da Hermes
-- [ ] Criar bot no Telegram via @BotFather e enviar o token
-- [ ] Enviar decreto estadual do Tocantins que tipifica multas ambientais (não confirmado com certeza via busca — Tom vai enviar)
-- [ ] Enviar normas municipais/interministeriais relevantes (quando tiver)
-- [ ] Enviar modelos de ofício/procedimento em PDF, aos poucos
+# Concluído
 
-# Pendente do lado da Hermes (Claude)
+- [x] Escolher a arquitetura (Hermes Workspace, em vez de n8n)
+- [x] Criar e-mail de serviço (lellishermes@gmail.com)
+- [x] Instalar o Hermes Workspace na VPS Hostinger
+- [x] Acessar o painel web e validar que responde
+- [x] Configurar acesso pelo celular
+- [x] Criar bot no Telegram (@Tomhenks78_Bot) e conectar ao gateway
+- [x] Restringir o bot só ao Tom (TELEGRAM_ALLOWED_USERS)
+- [x] Apresentar o Tom e a família dele à memória permanente da Hermes
+- [x] Criar repositório privado no GitHub e subir este vault
+- [x] Instalar plugin Obsidian Git e ligar sync automático (10 min)
+- [x] Tirar o vault do iCloud
 
-- [ ] Montar o workflow completo no n8n assim que tiver o token do bot
-- [ ] Conectar Google Calendar/Gmail (reaproveitando credencial do JARVIS webhook, ou nova, a definir)
-- [ ] Testar o bot com o Tom
-- [ ] Depois: montar dashboard/app web pra visualizar histórico (agenda, gastos, ocorrências) — segunda etapa, depois do bot funcionando
-- [ ] Depois: biblioteca jurídica pesquisável (indexação dos PDFs de leis/decretos)
+# Pendente — Tom
+
+- [ ] Enviar PDF do decreto estadual do Tocantins sobre multas ambientais
+- [ ] Enviar normas municipais e interministeriais relevantes
+- [ ] Enviar modelos de ofício, relatório e procedimentos (PDF)
+- [ ] Enviar documentos pessoais e certidões que quer que ela guarde
+- [ ] Confirmar se pode remover o projeto Docker redundante `agente-hermes-rxox`
+
+# Pendente — IA assistente
+
+- [ ] Montar a base jurídica pesquisável (lei + decreto de multa, com citação da fonte)
+- [ ] Ensinar os modelos de documento à Hermes, a partir dos PDFs
+- [ ] Conectar a Hermes a este repositório GitHub (clone na VPS + token), para usar o vault como segundo cérebro
+- [ ] Verificar se o agendador dela está disparando os lembretes de datas (15/5/1 dia antes)
+- [ ] Limpar sobras: pastas `.obsidian` órfãs em `hermes/` e `financeiro-pessoal/`, e o arquivo vazio `financeiro-pessoal/lellis pessoal.md`
+- [ ] Sugerir ao Tom trocar a senha do workspace por uma forte, antes de subir documentos sensíveis

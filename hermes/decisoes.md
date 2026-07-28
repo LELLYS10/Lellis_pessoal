@@ -6,25 +6,32 @@ atualizado_em: 2026-07-28
 
 # Decisões tomadas
 
-Cada entrada abaixo é uma decisão já fechada com o Tom. Não perguntar de novo — só revisitar se o Tom pedir explicitamente.
+Decisões já fechadas com o Tom. **Não reabrir** — só revisitar se ele pedir explicitamente.
+
+### Hermes Workspace em vez de n8n
+Decidido em 28/07/2026, revertendo o plano inicial. Motivo: o Hermes Workspace (Nous Research), disponível com 1 clique no Docker Manager da Hostinger, já traz pronto tudo que teríamos que construir peça por peça no n8n — memória persistente que aprende, painel web, agendador, multi-canal, catálogo de habilidades. Para um usuário leigo, menos peças para manter. O n8n continua na VPS para automações do CredPlus e pode ser usado depois para automações pontuais.
+Contrapartida aceita: a IA assistente não tem conexão direta com o Hermes Workspace (como tem com o n8n via MCP) — ajustes são feitos conversando com a própria Hermes, que se autoconfigura bem.
 
 ### Hermes separada do JARVIS/CredPlus
-Motivo: Tom não quer misturar vida pessoal/trabalho policial com o negócio CredPlus de forma alguma. Workflow n8n novo, bot Telegram novo, tabelas Supabase novas (`hermes_*`), sem overlap.
+Tom não quer misturar vida pessoal e trabalho policial com o negócio CredPlus. Sistema separado, bot separado, dados separados. O assistente do CredPlus é o JARVIS (n8n, bot @Credpainel_bot).
 
-### Um bot único (não dois bots separados por assunto)
-Cogitou-se separar "Hermes pessoal/financeiro" de "Hermes policial" em dois bots. Decisão: **não** — motivo do Tom foi só uma suposição de organização, sem necessidade real de fronteira entre os dois assuntos (diferente da fronteira CredPlus, essa sim real e mantida). Organização interna já resolve via tabelas separadas.
+### Um bot único, não dois separados por assunto
+Cogitou-se separar "pessoal/financeiro" de "policial". Decisão: não. O motivo do Tom era só uma suposição de organização, sem necessidade real. A organização acontece por dentro.
 
 ### Canal: Telegram, não WhatsApp
-Tom já tem um bot de WhatsApp exclusivo do CredPlus. Poderia criar um segundo, mas: API oficial da Meta exige número novo + aprovação (dias, às vezes custo); alternativa não-oficial (Baileys/whatsapp-web.js) arrisca banir o número. Telegram é gratuito, instantâneo, sem aprovação, e naturalmente já fica separado (bot diferente do `@Credpainel_bot`).
+Tom já tem bot de WhatsApp exclusivo do CredPlus. Um segundo exigiria número novo + aprovação da Meta (dias, custo), ou biblioteca não-oficial com risco de banimento. Telegram é gratuito, imediato e naturalmente separado.
 
-### Armazenamento pessoal: Supabase em PROJETO PRÓPRIO, não planilha
-Tom pediu explicitamente algo gratuito e sem planilhas. Decisão inicial era criar tabelas `hermes_*` dentro do projeto Supabase do CredPlus; em 28/07/2026 o Tom foi além e criou um projeto Supabase separado ("Lellis.pessoal", conta lellishermes@gmail.com). Melhor assim: separação total do CredPlus, não só de tabelas.
+### Vault fora do iCloud, sincronizado por Git
+O vault estava em `~/Library/Mobile Documents/iCloud~md~obsidian/`, mas o Git não funcionava lá: o macOS bloqueia escrita do Terminal nessa pasta ("Operation not permitted"), e daria para resolver com Acesso Total ao Disco — permissão forte demais para o problema. Movido para `~/Lellis Pessoal`. Ganho extra: só um sistema de sincronização (Git em vez de iCloud+Git brigando), evitando arquivos duplicados, e com histórico versionado.
 
-### E-mail dedicado: lellishermes@gmail.com (conta de serviço)
-Criado em 28/07/2026. O e-mail principal do Tom (lellisflavio@gmail.com) NÃO muda e NÃO migra — toda a vida e o círculo de trabalho dele estão nele. O e-mail da Hermes é conta de serviço: o Tom não precisa acessar no dia a dia. Para a Hermes trabalhar nos dados reais do Tom, compartilhar a agenda/Drive do principal com a conta da Hermes. Se algo chegar na caixa da Hermes que o Tom precise ver, ligar encaminhamento automático pro principal.
+### Repositório GitHub privado, nunca público
+Contém CPF de familiares, dados de menores de idade e, futuramente, ocorrências policiais. `github.com/LELLYS10/Lellis_pessoal` criado como Private.
 
-### Biblioteca jurídica: só como apoio, nunca fonte final
-Tom quer que a Hermes cruze automaticamente lei de crime ambiental + decreto que tipifica a multa, pra ele não perder tempo lendo lei. Aceito, mas com resguardo: a Hermes sempre mostra a citação exata (lei/artigo) usada, porque isso vira base de documento oficial — a conferência final é sempre do Tom.
+### E-mail de serviço, sem migrar o principal
+lellisflavio@gmail.com continua sendo o e-mail do Tom para tudo — toda a vida e o círculo de trabalho dele estão nele, e ele não quer mudar. Foi criado lellishermes@gmail.com apenas como conta de serviço da Hermes. Se necessário, a agenda do principal pode ser compartilhada com a conta de serviço, sem o Tom mudar nada na rotina.
 
-### Documentação do projeto neste vault Obsidian
-Tom pediu estrutura de documentação em `.md`, separada em vault próprio (`Lellis Pessoal`, distinto do `CENTRAL-CREDPLUS`), com controle de versão via git, comitando a cada mudança relevante — pra qualquer IA conseguir entender o projeto lendo os arquivos, sem depender de memória de conversa.
+### Base jurídica: apoio, nunca fonte final
+A Hermes cruza lei + decreto para poupar o tempo do Tom, mas sempre mostrando a citação exata (lei, artigo, decreto). Como isso alimenta documento oficial, a conferência final é dele. IA pode errar número de artigo ou trabalhar com norma desatualizada.
+
+### Documentação versionada neste vault
+Estrutura em `.md`, em vault próprio separado do CENTRAL-CREDPLUS, com commit a cada mudança relevante, escrita de forma que qualquer IA consiga retomar o projeto sem depender de memória de conversa.
