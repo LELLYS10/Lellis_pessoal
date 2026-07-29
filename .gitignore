@@ -1,2 +1,17 @@
 .DS_Store
 .obsidian/workspace.json
+_to_delete/
+
+# ============================================================
+# DOCUMENTOS PESSOAIS — NUNCA ENVIAR AO GITHUB
+# ------------------------------------------------------------
+# A pasta pessoal/documentos-familia guarda RG, CNH, CNIS,
+# certidoes e outros documentos de identidade do Tom e da
+# familia. Eles ficam apenas no Mac, para o Obsidian e a Hermes
+# consultarem localmente.
+#
+# NAO REMOVA ESTA REGRA. Uma vez enviado ao Git, um documento
+# fica no historico do repositorio permanentemente, mesmo que
+# seja apagado depois.
+# ============================================================
+pessoal/documentos-familia/
