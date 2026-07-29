@@ -28,9 +28,20 @@ Regras ao trabalhar neste vault: atualize `CHANGELOG.md` a cada mudança relevan
 ## Estrutura
 
 - **hermes/** — a assistente pessoal do Tom. Projeto principal deste vault.
-- **financeiro-pessoal/** — gastos e pagamentos pessoais (não confundir com o financeiro do CredPlus).
-- **policial/** — trabalho na polícia ambiental: ocorrências, relatórios, ofícios, base jurídica.
+- **financeiro-pessoal/** — gastos e pagamentos pessoais: contas, cartões, dívidas, pagamentos e planejamento. Não confundir com o financeiro do CredPlus.
+- **policial/** — trabalho na polícia ambiental: legislação, modelos, ocorrências e comunicação profissional.
+- **pessoal/** — agenda, lembretes, contatos, notas e documentos da família.
 - **CHANGELOG.md** — histórico cronológico de tudo que foi alterado.
+
+## Como alimentar este vault
+
+1. PDFs de leis, decretos e normas: `policial/01-legislacao/`.
+2. Modelos reutilizáveis de ofício, ocorrência, relatório, parte diária e WhatsApp: `policial/02-modelos/`.
+3. Ocorrências reais e materiais com dados pessoais: `policial/03-ocorrencias-restritas/`.
+4. Contas, cartões, dívidas e pagamentos pessoais: `financeiro-pessoal/`.
+5. Datas, lembretes, contatos e anotações pessoais: `pessoal/`.
+
+Os arquivos das áreas restritas não sobem para o GitHub. Os índices, modelos sem dados reais, legislação e organização geral podem ser sincronizados pelo Obsidian Git.
 
 ## Quem é o Tom
 

@@ -2,6 +2,12 @@
 
 Histórico de mudanças, mais recente primeiro.
 
+## 2026-07-29 — ORGANIZAÇÃO DA VIDA PESSOAL E PROFISSIONAL
+
+- Criada estrutura para legislação, modelos policiais, ocorrências restritas, contas pessoais, cartões, dívidas, agenda, contatos e notas.
+- Definidas áreas que podem sincronizar com o GitHub privado e áreas que permanecem somente locais por conterem dados sensíveis.
+- Nenhum arquivo pessoal, policial ou financeiro existente foi movido ou apagado nesta etapa.
+
 ## 2026-07-28 (noite) — HERMES NO AR
 
 Dia em que a Hermes saiu do papel e entrou em funcionamento.

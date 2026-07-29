@@ -14,8 +14,11 @@ Tom atua na polícia ambiental no estado do Tocantins. A Hermes vai ajudar com:
 
 ## Subpastas
 
-- `juridico/` — leis, decretos e normas que alimentam a Hermes
-- `modelos/` — modelos de ofício/relatório/procedimento em PDF fornecidos pelo Tom
+- `01-legislacao/` — PDFs de leis, decretos e normas. Separar em `federal/`, `tocantins/`, `interministerial/` e `municipal/`.
+- `02-modelos/` — modelos reutilizáveis de ocorrência, ofício, relatório, parte diária e mensagem de WhatsApp.
+- `03-ocorrencias-restritas/` — casos reais, documentos com nomes, CPFs, endereços ou dados operacionais. Esta pasta não vai para o GitHub.
+- `juridico/` — índice da biblioteca jurídica já iniciada.
+- `modelos/` — índice anterior de modelos, mantido para não quebrar referências existentes.
 
 ## Importante
 
