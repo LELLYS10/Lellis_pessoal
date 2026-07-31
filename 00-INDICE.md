@@ -17,11 +17,12 @@ Local no disco: `/Users/lellisflaviooliveirasantos/Lellis Pessoal` (fora do iClo
 
 Leia nesta ordem:
 
-1. Este arquivo (visão geral)
-2. `hermes/COMO-CONTINUAR.md` — **comece o trabalho por aqui**. Estado atual, o que falta, e o passo-a-passo do próximo passo.
-3. `hermes/arquitetura.md` — como o sistema funciona hoje, de verdade
-4. `hermes/decisoes.md` — decisões já fechadas. **Não reabra o que está lá.**
-5. `hermes/pendencias.md` — lista de tarefas
+1. `00-GUIA-PARA-IA.md` — regras simples para trabalhar neste cofre.
+2. Este arquivo (visão geral).
+3. `hermes/COMO-CONTINUAR.md` — **comece o trabalho por aqui**. Estado atual, o que falta, e o passo-a-passo do próximo passo.
+4. `hermes/arquitetura.md` — como o sistema funciona hoje, de verdade.
+5. `hermes/decisoes.md` — decisões já fechadas. **Não reabra o que está lá.**
+6. `hermes/pendencias.md` — lista de tarefas.
 
 Regras ao trabalhar neste vault: atualize `CHANGELOG.md` a cada mudança relevante, e comite. Nunca coloque senha, token ou chave de API dentro destes arquivos — o repositório é privado, mas credenciais ficam só nas variáveis de ambiente do servidor.
 

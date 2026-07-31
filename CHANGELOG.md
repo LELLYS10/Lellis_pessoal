@@ -2,6 +2,14 @@
 
 Histórico de mudanças, mais recente primeiro.
 
+## 2026-07-31 — GUIA SIMPLES PARA IA E ORGANIZAÇÃO
+
+- Criado `00-GUIA-PARA-IA.md` como ponto único de entrada para qualquer IA.
+- Definido limite de 200 linhas por arquivo Markdown; conteúdos maiores devem
+  ser separados em subpastas e arquivos por assunto.
+- Registrada a rotina de revisão, commit e envio ao GitHub privado.
+- Atualizado `00-INDICE.md` para iniciar sempre pelo guia.
+
 ## 2026-07-29 — ORGANIZAÇÃO DA VIDA PESSOAL E PROFISSIONAL
 
 - Criada estrutura para legislação, modelos policiais, ocorrências restritas, contas pessoais, cartões, dívidas, agenda, contatos e notas.
