@@ -20,6 +20,9 @@ pessoal/documentos-familia/
 # A estrutura e os modelos gerais podem ser sincronizados; documentos brutos
 # e ocorrencias reais ficam apenas no Mac e na Hermes, quando autorizado.
 policial/03-ocorrencias-restritas/
+# Modelos policiais preenchidos, com nomes ou matrículas reais, ficam somente
+# no cofre local. Publique apenas versões anonimizadas.
+policial/02-modelos/permuta-de-servico/PERMUTA-DE-SERVICO-NOVO-MODELO.docx
 financeiro-pessoal/extratos-brutos/
 financeiro-pessoal/comprovantes-brutos/
 pessoal/contatos/privado/

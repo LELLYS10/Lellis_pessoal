@@ -12,5 +12,6 @@ Aqui entram modelos sem dados reais, para a Hermes aprender o padrão de redaç�
 - `relatorios/`
 - `parte-diaria/`
 - `whatsapp/`
+- `permuta-de-servico/`
 
 Antes de guardar um modelo, retire nomes, CPF, telefones, placas, endereços e números de processos reais.

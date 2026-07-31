@@ -2,6 +2,11 @@
 
 Histórico de mudanças, mais recente primeiro.
 
+## 2026-07-31 — MODELO DE PERMUTA DE SERVIÇO
+
+- Adicionado o modelo Word de permuta de serviço à biblioteca policial.
+- Criado índice de uso em `policial/02-modelos/permuta-de-servico/`.
+
 ## 2026-07-31 — GUIA SIMPLES PARA IA E ORGANIZAÇÃO
 
 - Criado `00-GUIA-PARA-IA.md` como ponto único de entrada para qualquer IA.
