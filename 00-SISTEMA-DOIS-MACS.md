@@ -33,8 +33,37 @@ Era essa a causa das máquinas viverem diferentes.
 
 ## 2. Cofre CENTRAL-CREDPLUS
 
-- **Status:** existe só nesta máquina, ainda **sem backup e sem sincronia**
-- **Pendência:** localizar a pasta, colocar no GitHub e clonar no Mac Mini
+- **Onde:** `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/CENTRAL-CREDPLUS`
+- **Status:** no iCloud, **sem git e sem backup nenhum**
+
+### ⚠️ Problema encontrado em 03/09/2026
+
+**50 das 55 notas NÃO estão baixadas neste Mac.** Só existem na nuvem da Apple.
+O que está no disco são ponteiros vazios — nem o Claude nem nenhum programa consegue ler o conteúdo.
+
+Entre as notas que só existem na nuvem: todo o CENTRO_HERMES_OPENCLAW, o Cérebro CredPlus,
+as 11 skills da pasta 20-SKILLS, os prompts mestres e o "Emails e Senhas - CredPlus".
+
+Causa: **Otimizar Armazenamento do Mac** ligado no iCloud Drive. O Mac apaga o conteúdo local
+dos arquivos pouco usados e deixa só o nome. Enquanto estiverem assim, é impossível fazer backup —
+não há o que copiar.
+
+### Como resolver (2 minutos, no Finder)
+
+1. Finder → menu **Ir** → **Ir para Pasta...** → cole:
+   `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/`
+2. Clique com o botão direito na pasta **CENTRAL-CREDPLUS** → **Baixar Agora**
+3. Espere a nuvenzinha sumir de todos os arquivos
+
+Para não voltar a acontecer:
+Ajustes do Sistema → Apple ID → iCloud → iCloud Drive → **desligar "Otimizar Armazenamento do Mac"**
+
+### Depois disso
+
+Colocar no git igual ao cofre pessoal, mas **fora do iCloud** — git dentro do iCloud corrompe,
+porque o iCloud sincroniza arquivo por arquivo e não entende que o `.git` é um conjunto só.
+
+A nota `00-INICIO/Emails e Senhas - CredPlus.md` **não deve ir para o GitHub**. Entra no .gitignore.
 
 ---
 
@@ -87,7 +116,9 @@ cd ~/.codex && git clone https://github.com/LELLYS10/codex-skills.git skills
 
 ## Pendências
 
-- [ ] Localizar e versionar o cofre CENTRAL-CREDPLUS
+- [x] Localizar o cofre CENTRAL-CREDPLUS (esta no iCloud)
+- [ ] **URGENTE:** baixar as 50 notas presas na nuvem (ver secao 2)
+- [ ] Tirar o CENTRAL-CREDPLUS do iCloud e versionar em git
 - [ ] Criar o repositório `codex-skills` no GitHub e enviar
 - [ ] Clonar o cofre e as skills no Mac Mini
-- [ ] Conferir se o repositório `Lellis_pessoal` está privado
+- [x] Conferir se o repositório `Lellis_pessoal` está privado — **confirmado privado** em 03/09/2026
