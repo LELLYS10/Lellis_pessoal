@@ -18,6 +18,20 @@ Fala natural, com os dados. Exemplos:
 
 Se faltar algum dado obrigatório, ele pergunta antes de gerar.
 
+### O relatório do WhatsApp é diferente
+
+Esse não vira PDF — vem como **texto pronto pra copiar e colar no grupo**, com
+os emojis e o negrito da corporação. Você dá o assunto solto e a equipe:
+
+> "Relatório do dia pro WhatsApp. Operação Protetor dos Biomas, OS 053/2026 de
+> 01 a 06/09. Local Fazenda Santa Rosa, Paranã-TO. Natureza porte ilegal de arma.
+> Assunto: abordamos um cara de moto com espingarda sem registro, prendemos e
+> levamos pra central de flagrantes de Arraias. Equipe: ST CIEL - 1 H, SGT
+> MARTINS - 2 H."
+
+**Ele escreve o histórico sozinho**, no estilo oficial. Vem dentro de um bloco
+de código: toca uma vez pra copiar e cola no WhatsApp já formatado.
+
 ## Os modelos
 
 | Documento | Quando usar |
@@ -30,6 +44,7 @@ Se faltar algum dado obrigatório, ele pergunta antes de gerar.
 | **Relatório Operacional** | Fechamento de operação |
 | **Permuta de Serviço** | Troca de plantão |
 | **Ofício** | Solicitação formal ao comando |
+| **Relatório do dia (WhatsApp)** | Texto pronto pro grupo — **não é PDF** |
 
 ## O que tem em cada pasta
 
