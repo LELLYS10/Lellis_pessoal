@@ -38,8 +38,18 @@ enquadramento: Quartel da 2ª CIA/BPMA
 | 3º HOMEM | ST QPPM | 04.504 | **LELLIS** Flávio Oliveira Santos | (63) 99263-9099 |
 | 4º HOMEM | ST QPPM | 05.629/2 | **NATANAEL** Araújo de Lima | (63) 99246-7028 |
 
-**Forma curta para o campo "Guarnição" dos documentos:**
+**Forma curta para o campo "Guarnição" dos documentos em PDF:**
 `2º TEN Dias, 3º SGT Rocha, ST Lellis, ST Natanael`
+
+**Bloco de equipe pronto para o relatório do WhatsApp** — copie exatamente
+assim, uma linha por PM, já com a numeração de homem:
+
+```
+2º TEN DIAS - 1º H
+3º SGT ROCHA - 2º H
+ST LELLIS - 3º H
+ST NATANAEL - 4º H
+```
 
 ## Uniforme e equipamento
 
