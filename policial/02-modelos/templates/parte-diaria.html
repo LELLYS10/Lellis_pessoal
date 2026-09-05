@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>Parte Diária</title>
+<style>
+  @page { size: A4; margin: 15mm 18mm; }
+  * { box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; font-size: 11pt; color: #000; margin: 0; }
+  .cabecalho { text-align: center; margin-bottom: 4mm; }
+  .cabecalho img { width: 105mm; }
+  .orgao { text-align: center; font-size: 10.5pt; line-height: 1.25; margin-bottom: 6mm; }
+  h1 { text-align: center; font-size: 13pt; font-weight: bold; margin: 0 0 5mm; letter-spacing: .5px; }
+  h2 { font-size: 11pt; margin: 5mm 0 2mm; }
+  p { text-align: justify; line-height: 1.5; margin: 0 0 3mm; }
+  table.dados { width: 100%; border-collapse: collapse; margin-bottom: 5mm; }
+  table.dados td { border: 1px solid #000; padding: 1.6mm 2.5mm; vertical-align: top; font-size: 10.5pt; }
+  table.dados td.rotulo { width: 32mm; font-weight: bold; background: #f0f0f0; }
+  table.grade { width: 100%; border-collapse: collapse; margin-bottom: 5mm; font-size: 10pt; }
+  table.grade th, table.grade td { border: 1px solid #000; padding: 1.5mm 2mm; text-align: center; }
+  table.grade th { background: #f0f0f0; font-weight: bold; }
+  .assinatura { margin-top: 14mm; text-align: center; font-size: 10.5pt; line-height: 1.45; }
+  .assinatura .linha { width: 80mm; border-top: 1px solid #000; margin: 0 auto 1.5mm; }
+  .local-data { text-align: center; margin: 8mm 0 0; font-size: 10.5pt; }
+  .secao { font-weight:bold; margin:6mm 0 2mm; font-size:11pt; }
+  ol.itens { margin:1mm 0 3mm 8mm; padding:0; }
+  ol.itens li { margin-bottom:1mm; }
+  .opcoes { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5mm; margin-bottom:4mm; font-size:9.5pt; }
+  .opcoes div { border:1px solid #000; padding:1.2mm 1.5mm; }
+</style></head>
+<body>
+<div class="cabecalho"><img src="file:///opt/data/templates/brasao-pmto.png" alt=""></div>
+<div class="orgao">COMANDO DE POLICIAMENTO ESPECIALIZADO<br>BATALHÃO DE POLÍCIA MILITAR AMBIENTAL</div>
+<h1>PARTE DIÁRIA [NUMERO]/[ANO] DO PLANTÃO DO DIA [DIA_INICIO] PARA O DIA [DIA_FIM]</h1>
+<p style="text-align:left"><strong>SGD:</strong> [SGD]</p>
+
+<div class="secao">I – ASSUNÇÃO DO SERVIÇO</div>
+<p>Eu, [POSTO_ENTRANTE] RG [RG_ENTRANTE] [NOME_ENTRANTE], Mat. [MAT_ENTRANTE], recebi o serviço do dia [DATA_ANTERIOR] para o dia [DATA_ATUAL] do [POSTO_SAINTE] RG [RG_SAINTE] [NOME_SAINTE], comunico ao Sr. [DESTINATARIO] Comandante do [CIA] que reassumi o serviço de Plantão de Dia do [PELOTAO] - [CIA] no dia [DATA_ATUAL], no horário regulamentar, com as alterações relatadas na Parte Diária anterior e ciente de todas as ordens em vigor.</p>
+
+<div class="secao">II – SERVIÇO DIÁRIO</div>
+<p style="margin-left:5mm"><strong>a) Efetivo:</strong> [EFETIVO]<br>
+CMT [POSTO_CMT] RG [RG_CMT] [NOME_CMT] – Mat. [MAT_CMT]<br>
+ADJ [POSTO_ADJ] RG [RG_ADJ] [NOME_ADJ] – Mat. [MAT_ADJ]</p>
+<ol class="itens">
+  <li>Falta: [FALTA]</li>
+  <li>Atraso: [ATRASO]</li>
+  <li>Dispensa: [DISPENSA]</li>
+  <li>Outros: [OUTROS]</li>
+</ol>
+<p style="margin-left:5mm"><strong>b) Material Carga:</strong> [MATERIAL_CARGA]</p>
+<p style="margin-left:5mm"><strong>c) Instalações:</strong> [INSTALACOES]</p>
+<p style="margin-left:5mm"><strong>d) Viaturas:</strong> [VIATURAS]</p>
+
+<div class="secao">III – OCORRÊNCIAS</div>
+<table class="grade">
+  <tr><th>CIDADE</th><th>NATUREZA</th><th>PROTOCOLO</th></tr>
+  <!-- repita uma linha por ocorrencia -->
+  <tr><td>[CIDADE_1]</td><td>[NATUREZA_1]</td><td>[PROTOCOLO_1]</td></tr>
+</table>
+<p style="text-align:left">Veículos abordados: [VEICULOS] &nbsp;&nbsp; Embarcações abordadas: [EMBARCACOES] &nbsp;&nbsp; Pessoas abordadas: [PESSOAS]</p>
+
+<div class="secao">IV – ALTERAÇÕES</div>
+<p>[ALTERACOES]</p>
+
+<div class="secao">V – REMESSA DE DOCUMENTOS</div>
+<p>[REMESSA]</p>
+
+<div class="secao">VI – PASSAGEM DE SERVIÇO</div>
+<p>Permaneço escalado ciente de todas as ordens em vigor, bem como as alterações relatadas nesta Parte Diária e o material a cargo do Adjunto de Dia, ficando meu substituto cientificado.</p>
+
+<div class="local-data">[CIA] em [CIDADE] – TO, [DATA_EXTENSO].</div>
+
+<div class="assinatura">
+  Assinatura digital<br>
+  Adjunto da [CIA]<br>
+  <strong>[NOME_ASSINANTE] – Mat. [MAT_ASSINANTE]</strong>
+</div>
+</body>
+</html>
