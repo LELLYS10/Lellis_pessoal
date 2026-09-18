@@ -1,6 +1,23 @@
+[[Cerebro|<- voltar para o Cerebro]]
+
 # Changelog — Lellis Pessoal
 
 Histórico de mudanças, mais recente primeiro.
+
+## 2026-09-17 — INSTRUÇÕES DO AGENTE PARA TRABALHO POLICIAL AMBIENTAL
+
+- Criado `policial/00-INSTRUCOES-AGENTE.md` com a identidade profissional do
+  Tom (ST QPPM LELLIS), finalidade, frentes de trabalho, regras de consulta
+  aos arquivos, pesquisa normativa/enquadramento, redação e revisão
+  documental por tipo (correção de autos, memorial topográfico, memorial
+  fotográfico, relatório operacional, permuta/parte interna) e regras de
+  organização e proteção de registros.
+- Atualizado `policial/README.md` apontando para o novo arquivo como leitura
+  obrigatória antes de qualquer trabalho policial.
+- Modelos Word já existentes no projeto "PROJETO AGENTE PESSOAL" (Certidão de
+  correção, Memorial Fotográfico, Permuta de Serviço, modelo de Parte,
+  Memorial Topográfico, Relatório Operação Protetor dos Biomas) ainda não
+  foram copiados para este cofre — pendente.
 
 ## 2026-07-31 — MODELO DE PERMUTA DE SERVIÇO
 

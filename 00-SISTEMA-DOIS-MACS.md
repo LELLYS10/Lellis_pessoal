@@ -1,5 +1,7 @@
 # Sistema — MacBook + Mac Mini
 
+[[Cerebro|<- voltar para o Cerebro]]
+
 > Mapa de onde cada coisa mora e como manter os dois Macs iguais.
 > Criado em 03/09/2026.
 

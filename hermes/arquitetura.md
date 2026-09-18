@@ -1,3 +1,5 @@
+[[hermes/README|<- Hermes]] · [[Cerebro|Cerebro]]
+
 ---
 titulo: Arquitetura Técnica — Hermes
 status: implementado e funcionando (28/07/2026)

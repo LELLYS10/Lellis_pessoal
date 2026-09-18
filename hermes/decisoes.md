@@ -1,3 +1,5 @@
+[[hermes/README|<- Hermes]] · [[Cerebro|Cerebro]]
+
 ---
 titulo: Registro de Decisões — Hermes
 status: vivo (adicionar novas decisões no topo)

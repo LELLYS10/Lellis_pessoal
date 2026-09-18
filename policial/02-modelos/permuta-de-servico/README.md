@@ -5,6 +5,10 @@ status: ativo
 
 # Permuta de Serviço
 
+[[policial/02-modelos/README|<- Modelos]] · [[Cerebro|Cerebro]]
+
+Veja também: [[policial/02-modelos/permuta-de-servico/MODELO-PERMUTA-DE-SERVICO|modelo genérico (.md)]]
+
 Modelo em Word para pedidos e registros de permuta de serviço.
 
 ## Arquivo

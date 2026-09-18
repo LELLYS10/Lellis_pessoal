@@ -6,9 +6,11 @@ atualizado_em: 2026-07-28
 
 # Hermes
 
+[[Cerebro|<- voltar para o Cerebro]]
+
 Assistente pessoal do Tom, rodando na VPS dele via Hermes Workspace (Nous Research). Conversa por navegador, celular e Telegram, com memória própria que aprende com o uso.
 
-**Para retomar o trabalho neste projeto, leia `COMO-CONTINUAR.md`.**
+**Para retomar o trabalho neste projeto, leia [[hermes/COMO-CONTINUAR|COMO-CONTINUAR]].**
 
 ## O que ela cuida
 
@@ -34,7 +36,7 @@ Humanizada e calorosa, em português do Brasil, conversando como pessoa — nada
 
 ## Arquivos
 
-- `COMO-CONTINUAR.md` — estado atual, o que falta, armadilhas já encontradas
-- `arquitetura.md` — como o sistema funciona por dentro
-- `decisoes.md` — decisões fechadas e o porquê
-- `pendencias.md` — lista de tarefas
+- [[hermes/COMO-CONTINUAR|COMO-CONTINUAR.md]] — estado atual, o que falta, armadilhas já encontradas
+- [[hermes/arquitetura|arquitetura.md]] — como o sistema funciona por dentro
+- [[hermes/decisoes|decisoes.md]] — decisões fechadas e o porquê
+- [[hermes/pendencias|pendencias.md]] — lista de tarefas

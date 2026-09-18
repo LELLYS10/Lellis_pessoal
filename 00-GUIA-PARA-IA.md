@@ -5,6 +5,8 @@ status: ativo
 
 # Lellis Pessoal: comece aqui
 
+[[Cerebro|<- voltar para o Cerebro]]
+
 Este é o cofre pessoal e profissional do Tom. Ele funciona no Obsidian e tem
 cópia no GitHub privado. O CredPlus não faz parte deste projeto.
 
@@ -16,8 +18,8 @@ a Hermes encontrem informações sem depender da memória de uma conversa.
 ## Leitura inicial
 
 1. Leia este guia.
-2. Leia `00-INDICE.md`.
-3. Se o assunto for Hermes, leia `hermes/COMO-CONTINUAR.md`.
+2. Leia [[00-INDICE]].
+3. Se o assunto for Hermes, leia [[hermes/COMO-CONTINUAR|hermes/COMO-CONTINUAR.md]].
 4. Leia apenas a pasta ligada ao pedido. Não carregue o cofre inteiro sem
    necessidade.
 

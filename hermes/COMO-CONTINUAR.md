@@ -1,3 +1,5 @@
+[[hermes/README|<- Hermes]] · [[Cerebro|Cerebro]]
+
 ---
 titulo: Como Continuar — Guia de Retomada do Projeto Hermes
 publico: qualquer IA assistente que precise retomar este projeto do zero

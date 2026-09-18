@@ -5,6 +5,8 @@ status: ativo
 
 # Vida Pessoal
 
+[[Cerebro|<- voltar para o Cerebro]]
+
 - `agenda-e-lembretes/` — compromissos, datas importantes e lembretes.
 - `contatos/` — listas de contato; dados privados ficam em `contatos/privado/` e não sobem ao GitHub.
 - `documentos-familia/` — RG, CNH, certidões e documentos sensíveis. Não sobe ao GitHub.
