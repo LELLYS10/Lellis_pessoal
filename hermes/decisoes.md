@@ -37,3 +37,38 @@ A Hermes cruza lei + decreto para poupar o tempo do Tom, mas sempre mostrando a 
 
 ### Documentação versionada neste vault
 Estrutura em `.md`, em vault próprio separado do CENTRAL-CREDPLUS, com commit a cada mudança relevante, escrita de forma que qualquer IA consiga retomar o projeto sem depender de memória de conversa.
+
+## 17/09/2026 - Troca do modelo do Hermes
+
+Estava em `openai/gpt-4o` (modelo de 2024). Trocado para
+`deepseek/deepseek-v4.1-flash` via OpenRouter.
+
+Motivo: gpt-4o entregava resultado fraco mesmo com a skill certa, e era mais caro.
+O DeepSeek Flash custa cerca de R$ 0,77 por milhao de tokens de entrada e
+R$ 3,08 de saida, contra R$ 1,03 / R$ 6,17 do gpt-5.6-luna (a outra opcao
+considerada). Contexto subiu de 128 mil para 1 milhao de tokens.
+
+Resultado: qualidade visual dos dashboards melhorou muito no primeiro teste.
+
+### Onde mexer
+
+Arquivo: `/docker/hermes-agent-rxox/data/config.yaml`, campo `model.default`.
+Depois de editar: `docker restart hermes-agent-rxox-hermes-agent-1`.
+Copia de seguranca salva como `config.yaml.antes-da-troca`.
+
+### Outros ajustes feitos no mesmo dia
+
+- `display.compact` mudado de `false` para `true` — o Hermes parou de listar
+  cada ferramenta que usa no Telegram. Copia: `config.yaml.antes-compact`.
+- Skill `design-futurista-3d` copiada do container `hermes-workspace-uzp5`
+  para o `hermes-agent-rxox`, em `/opt/data/skills/creative/`. Antes ela so
+  existia no outro container, entao o Hermes gastava 2 minutos procurando
+  antes de desistir e buscar no GitHub.
+
+### Se quiser voltar atras
+
+    cd /docker/hermes-agent-rxox/data
+    cp config.yaml.antes-da-troca config.yaml
+    docker restart hermes-agent-rxox-hermes-agent-1
+
+Ver tambem: [[servidor-de-arquivos]]
