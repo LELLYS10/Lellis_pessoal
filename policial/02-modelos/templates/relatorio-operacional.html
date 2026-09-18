@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>Relatório Operacional</title>
+<style>
+  @page { size: A4; margin: 15mm 18mm; }
+  * { box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; font-size: 11pt; color: #000; margin: 0; }
+  .cabecalho { text-align: center; margin-bottom: 4mm; }
+  .cabecalho img { width: 105mm; }
+  .orgao { text-align: center; font-size: 10.5pt; line-height: 1.25; margin-bottom: 6mm; }
+  h1 { text-align: center; font-size: 13pt; font-weight: bold; margin: 0 0 5mm; letter-spacing: .5px; }
+  h2 { font-size: 11pt; margin: 5mm 0 2mm; }
+  p { text-align: justify; line-height: 1.5; margin: 0 0 3mm; }
+  table.dados { width: 100%; border-collapse: collapse; margin-bottom: 5mm; }
+  table.dados td { border: 1px solid #000; padding: 1.6mm 2.5mm; vertical-align: top; font-size: 10.5pt; }
+  table.dados td.rotulo { width: 32mm; font-weight: bold; background: #f0f0f0; }
+  table.grade { width: 100%; border-collapse: collapse; margin-bottom: 5mm; font-size: 10pt; }
+  table.grade th, table.grade td { border: 1px solid #000; padding: 1.5mm 2mm; text-align: center; }
+  table.grade th { background: #f0f0f0; font-weight: bold; }
+  .assinatura { margin-top: 14mm; text-align: center; font-size: 10.5pt; line-height: 1.45; }
+  .assinatura .linha { width: 80mm; border-top: 1px solid #000; margin: 0 auto 1.5mm; }
+  .local-data { text-align: center; margin: 8mm 0 0; font-size: 10.5pt; }
+  .secao { font-weight:bold; margin:6mm 0 2mm; font-size:11pt; }
+  ol.itens { margin:1mm 0 3mm 8mm; padding:0; }
+  ol.itens li { margin-bottom:1mm; }
+  .opcoes { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5mm; margin-bottom:4mm; font-size:9.5pt; }
+  .opcoes div { border:1px solid #000; padding:1.2mm 1.5mm; }
+</style></head>
+<body>
+<div class="cabecalho"><img src="file:///opt/data/templates/brasao-pmto.png" alt=""></div>
+<div class="orgao">COMANDO DE POLICIAMENTO ESPECIALIZADO<br>BATALHÃO DE POLÍCIA MILITAR AMBIENTAL</div>
+<p style="text-align:left"><strong>SGD:</strong> [SGD]</p>
+<h1>RELATÓRIO OPERACIONAL</h1>
+<table class="dados">
+  <tr><td class="rotulo">Ordem de Serviço nº</td><td>[NUMERO_OS]</td></tr>
+  <tr><td class="rotulo">Nome da Operação</td><td>[NOME_OPERACAO]</td></tr>
+  <tr><td class="rotulo">Período</td><td>[DATA_INICIO] a [DATA_FIM]</td></tr>
+</table>
+
+<div class="secao">EXECUÇÃO</div>
+
+<p style="text-align:left"><strong>EFETIVO EMPREGADO ([QTD_EFETIVO] componentes)</strong></p>
+<div class="opcoes">
+  <div>[ ] Policiais Militares</div><div>[ ] Agentes Naturatins</div><div>[ ] Agentes IBAMA</div>
+  <div>[ ] Agentes ICMBio</div><div>[ ] Agentes FUNAI</div><div>[ ] Guarda Amb. Municipal</div>
+</div>
+
+<p style="text-align:left"><strong>RECURSO EMPREGADO ([QTD_RECURSO])</strong></p>
+<div class="opcoes">
+  <div>[ ] Veículo terrestre PMTO</div><div>[ ] Embarcação PMTO</div><div>[ ] Drone PMTO</div>
+  <div>[ ] Aeronave</div><div>[ ] Veículo outro órgão</div><div>[ ] Embarcação outro órgão</div>
+</div>
+
+<p style="text-align:left"><strong>AÇÕES EXECUTADAS ([QTD_ACOES])</strong></p>
+<div class="opcoes">
+  <div>[ ] PTRs e Fisc. Terrestres</div><div>[ ] PTRs e Fisc. Aquáticas</div><div>[ ] Abordagem a pessoas</div>
+  <div>[ ] Vistoria em veículos</div><div>[ ] Vistoria em acampamentos</div><div>[ ] Pontos de Estacionamento</div>
+  <div>[ ] Barreira Policial</div><div>[ ] Apoio outras UPM</div><div>[ ] Apoio outros Órgãos</div>
+  <div>[ ] Requisições MPE</div><div>[ ] Determinação Judicial</div><div>[ ] Escoltas</div>
+  <div>[ ] Educação Ambiental</div><div>[ ] Atend. de denúncias</div><div>[ ] Resgate animal silvestre</div>
+</div>
+
+<div class="secao">OCORRÊNCIAS REGISTRADAS</div>
+<table class="grade">
+  <tr><th style="width:35mm">PROTOCOLO Nº</th><th>NATUREZA</th></tr>
+  <!-- repita uma linha por ocorrencia -->
+  <tr><td>[PROTOCOLO_1]</td><td style="text-align:left">[NATUREZA_1]</td></tr>
+</table>
+
+<div class="secao">RESULTADOS</div>
+<p style="text-align:left;font-size:10pt;margin-bottom:1mm"><strong>Abordagens / Vistorias</strong></p>
+<table class="grade">
+  <tr><th>PESSOAS</th><th>VEÍCULOS</th><th>EMBARCAÇÃO</th><th>PROP. RURAL</th></tr>
+  <tr><td>[QTD_PESSOAS]</td><td>[QTD_VEICULOS]</td><td>[QTD_EMBARCACOES]</td><td>[QTD_PROPRIEDADES]</td></tr>
+</table>
+<p style="text-align:left;font-size:10pt;margin-bottom:1mm"><strong>Prisões / Detenções</strong></p>
+<table class="grade">
+  <tr><th>APFD</th><th>TCO</th><th>MANDADO PRISÃO</th><th>ATO INFRACIONAL</th></tr>
+  <tr><td>[QTD_APFD]</td><td>[QTD_TCO]</td><td>[QTD_MANDADO]</td><td>[QTD_ATO]</td></tr>
+</table>
+
+<div class="local-data">[CIDADE] – TO, [DATA_EXTENSO].</div>
+
+<div class="assinatura">
+  <div class="linha"></div>
+  <strong>[NOME_COMPLETO] – [POSTO_GRAD]</strong><br>
+  MAT. [MATRICULA], RG: [RG]
+</div>
+</body>
+</html>

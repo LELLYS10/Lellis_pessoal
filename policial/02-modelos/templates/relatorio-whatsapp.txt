@@ -1,0 +1,22 @@
+*🚨POLÍCIA MILITAR DO ESTADO DO TOCANTINS🚨*
+
+*COMANDO DE POLICIAMENTO ESPECIALIZADO - CPE*
+
+*🐆BATALHÃO DE POLÍCIA MILITAR AMBIENTAL - BPMA🐆*
+
+*[NOME DA OPERAÇÃO]*
+
+*Local:* [LOCAL]
+
+*[NATUREZA DA OCORRÊNCIA]*
+
+*OS [NUMERO]/[ANO]/BPMA-P3 de [DATA INICIAL] a [DATA FINAL]*
+
+*Histórico:*
+
+[HISTÓRICO — texto narrativo elaborado a partir do assunto informado pelo TOM]
+
+*Equipe:*
+[EQUIPE — uma linha por policial, no formato: POSTO NOME - Nº H]
+
+🐆_BPMA … O Guardião dos Biomas Tocantinenses…_🐆

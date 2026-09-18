@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>Auto de Constatação</title>
+<style>
+  @page { size: A4; margin: 15mm 18mm; }
+  * { box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; font-size: 11pt; color: #000; margin: 0; }
+  .cabecalho { text-align: center; margin-bottom: 4mm; }
+  .cabecalho img { width: 105mm; }
+  .orgao { text-align: center; font-size: 10.5pt; line-height: 1.25; margin-bottom: 6mm; }
+  h1 { text-align: center; font-size: 13pt; font-weight: bold; margin: 0 0 5mm; letter-spacing: .5px; }
+  h2 { font-size: 11pt; margin: 5mm 0 2mm; }
+  p { text-align: justify; line-height: 1.5; margin: 0 0 3mm; }
+  table.dados { width: 100%; border-collapse: collapse; margin-bottom: 5mm; }
+  table.dados td { border: 1px solid #000; padding: 1.6mm 2.5mm; vertical-align: top; font-size: 10.5pt; }
+  table.dados td.rotulo { width: 32mm; font-weight: bold; background: #f0f0f0; }
+  table.grade { width: 100%; border-collapse: collapse; margin-bottom: 5mm; font-size: 10pt; }
+  table.grade th, table.grade td { border: 1px solid #000; padding: 1.5mm 2mm; text-align: center; }
+  table.grade th { background: #f0f0f0; font-weight: bold; }
+  .assinatura { margin-top: 14mm; text-align: center; font-size: 10.5pt; line-height: 1.45; }
+  .assinatura .linha { width: 80mm; border-top: 1px solid #000; margin: 0 auto 1.5mm; }
+  .local-data { text-align: center; margin: 8mm 0 0; font-size: 10.5pt; }
+  .natureza { display:grid; grid-template-columns:repeat(4,1fr); gap:1.5mm; margin-bottom:5mm; font-size:9.5pt; }
+  .natureza div { border:1px solid #000; padding:1.2mm 1.5mm; }
+  .natureza .marcado { background:#ddd; font-weight:bold; }
+</style></head>
+<body>
+<div class="cabecalho"><img src="file:///opt/data/templates/brasao-pmto.png" alt=""></div>
+<div class="orgao">COMANDO DE POLICIAMENTO ESPECIALIZADO<br>BATALHÃO DE POLÍCIA MILITAR AMBIENTAL</div>
+<h1>AUTO DE CONSTATAÇÃO – [NUMERO]/[ANO] – [CIA]</h1>
+
+<p style="text-align:left"><strong>Entidade autuante:</strong> ( X ) Polícia Militar Ambiental – PMA</p>
+
+<table class="dados">
+  <tr><td class="rotulo">Batalhão</td><td>BPMA</td><td class="rotulo">Cia</td><td>[CIA]</td></tr>
+  <tr><td class="rotulo">Pelotão</td><td>[PELOTAO]</td><td class="rotulo">Grupamento</td><td>[GRUPAMENTO]</td></tr>
+  <tr><td class="rotulo">Número do AIA</td><td colspan="3">[NUMERO_AIA]</td></tr>
+  <tr><td class="rotulo">Solicitante</td><td colspan="3">[SOLICITANTE]</td></tr>
+  <tr><td class="rotulo">Nome/Razão Social</td><td colspan="3">[NOME_AUTOR]</td></tr>
+  <tr><td class="rotulo">Endereço</td><td colspan="3">[ENDERECO_AUTOR]</td></tr>
+  <tr><td class="rotulo">Município</td><td>[MUNICIPIO]</td><td class="rotulo">UF</td><td>[UF]</td></tr>
+</table>
+
+<h2>Dados do responsável pela constatação</h2>
+<table class="dados">
+  <tr><td class="rotulo">Nome</td><td colspan="3">[NOME_RESPONSAVEL]</td></tr>
+  <tr><td class="rotulo">Matrícula</td><td>[MATRICULA]</td><td class="rotulo">Posto/Grad.</td><td>[POSTO_GRAD]</td></tr>
+  <tr><td class="rotulo">Formação</td><td colspan="3">[FORMACAO]</td></tr>
+</table>
+
+<h2>Local e natureza</h2>
+<table class="dados">
+  <tr><td class="rotulo">Local</td><td colspan="3">[LOCAL]</td></tr>
+  <tr><td class="rotulo">Ponto de referência</td><td colspan="3">[REFERENCIA]</td></tr>
+  <tr><td class="rotulo">Latitude</td><td>[LATITUDE]</td><td class="rotulo">Longitude</td><td>[LONGITUDE]</td></tr>
+</table>
+
+<!-- Marque a natureza aplicavel trocando class="" por class="marcado" e o espaco por X -->
+<div class="natureza">
+  <div>[ ] Flora</div><div>[ ] Poluição</div><div>[ ] Dano Ambiental</div><div>[ ] Mineração</div>
+  <div>[ ] APP</div><div>[ ] Período de Defeso</div><div>[ ] Perícia</div><div>[ ] Fauna</div>
+  <div>[ ] Recuperação de Área Degradada</div><div>[ ] Atividade Poluidora</div><div>[ ] Pesca</div><div>[ ] Unid. de Conservação</div>
+  <div>[ ] Espécie Ameaçada</div><div>[ ] Outros</div><div></div><div></div>
+</div>
+
+<h2>Da constatação</h2>
+<p>[TEXTO_CONSTATACAO]</p>
+
+<div class="local-data">[MUNICIPIO] – [UF], [DATA_EXTENSO].</div>
+
+<div class="assinatura">
+  <div class="linha"></div>
+  <strong>[NOME_RESPONSAVEL] – [POSTO_GRAD]</strong><br>
+  MAT. [MATRICULA], RG: [RG]
+</div>
+</body>
+</html>
